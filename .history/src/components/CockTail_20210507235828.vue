@@ -7,7 +7,7 @@
                         <img :src="cocktail.strDrinkThumb" :alt="cocktail.idDrink">
                     </div>
                     <div class="cocktail-detail">
-                        <h3>🍹 {{cocktail.strDrink}}</h3>
+                        <h3>🍹 {{cocktail.strCategory}}</h3>
                         <div class="action">
                             <a-button  type="secondary">
                                 <i class="fa fa-money" aria-hidden="true"> {{money}}</i>
@@ -61,7 +61,7 @@ export default {
 .singlecocktail {
     height: fit-content;
     width: 150px;
-    margin:20px;
+    margin:10px;
 }
 .cocktail-list{
     display: flex;

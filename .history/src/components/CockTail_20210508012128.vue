@@ -53,6 +53,7 @@ export default {
     font-family: "Poppins",sans-serif;
     background:white;
     color:white;
+    border-top:2px solid gray;
 }
 .singlecocktail img{
     height: 150px;

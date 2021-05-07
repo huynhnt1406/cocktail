@@ -1,37 +1,40 @@
 <template>
   <a-layout id="components-layout-demo-side" theme="light"  style="min-height: 100vh">
-    <a-layout-sider style="background-color:white" v-model="collapsed" collapsible >
-      <img style="height:64px ; width:100%" src="https://thumbs.dreamstime.com/b/d-rendering-cocktail-word-blue-neon-cocktail-title-blue-neon-142126255.jpg" alt="">
+    <a-layout-sider style="background-color:white" v-model="collapsed" collapsible>
+      <img style="height:64px ; width:100%" src="https://curacaoliqueur.spin-cdn.com/182/14/1564/image/format_website_edit_5bdb59053e5da.jpg" alt="">
       <a-menu theme="light" :default-selected-keys="['1']" mode="inline">
         <a-menu-item key="1">
           <a-icon type="menu" />
-          <span><router-link class="link" to="/">Alcoholic</router-link></span>
+          <span><router-link to="/">Alcoholic</router-link></span>
         </a-menu-item>
         <a-menu-item key="2">
            <a-icon type="shopping-cart" />
-          <span><router-link class="link"  to="/yourorder">Your Order</router-link></span>
+          <span><router-link to="/yourorder">Your Order</router-link></span>
         </a-menu-item>
            <a-menu-item key="3">
            <a-icon type="info-circle" />
-          <span><router-link class="link"  to="/aboutus">About us</router-link></span>
+          <span><router-link to="/aboutus">About us</router-link></span>
         </a-menu-item>
            <a-menu-item key="4">
            <a-icon type="safety-certificate" />
-          <span><router-link class="link"  to="/policyandprivacy">Policy and Privacy</router-link></span>
+          <span><router-link to="/policyandprivacy">Policy and Privacy</router-link></span>
         </a-menu-item>
       </a-menu>
       <img style="height:62% ; width:100%" src="https://www.gobourbon.com/wp-content/uploads/2019/03/EFCCF7C6-0A6F-4658-83B6-877007B0A1AC-751x1024.jpeg" alt="">
     </a-layout-sider>
     <a-layout>
-      <a-layout-header :style="{background: '#fff'}" >
+      <a-layout-header style="background: #fff; padding: 0" >
         <SearchBar/>
       </a-layout-header>
-      <a-layout-content>
-        <div class="cocktail-lists" :style="{margin:'2px' , background: '#fff', minHeight: '360px' }">
+      <a-layout-content style="margin: 0 16px">
+        <a-breadcrumb style="margin: 16px 0">
+          <a-breadcrumb-item>Cocktail Square 🍹</a-breadcrumb-item>
+        </a-breadcrumb>
+        <div class="cocktail-lists" :style="{ padding: '24px', background: '#fff', minHeight: '360px' }">
           <router-view/>
         </div>
       </a-layout-content>
-      <a-layout-footer class="footer" style="text-align: center" :style="{padding:'2vh',color:'gray' ,background: 'white',textAlign:'center'}">
+      <a-layout-footer class="footer" :style="{height: '5vh',color:'white' ,background: '#002140', textAlign:'center'}">
         CockTail Store ©2021 Created by nthuynh
       </a-layout-footer>
     </a-layout>
@@ -62,15 +65,12 @@ export default {
 }
 .cocktail-lists{
   overflow-y: scroll;
-  height:84vh;
+  height: 75vh;
 }
 .footer{
-  background-color: white;
+  background-color: #002140;
 }
-.link{
-  color:black;
-}
-.link:focus{
-  color:gray;
+.ant-layout-sider-trigger{
+  background: red;
 }
 </style>

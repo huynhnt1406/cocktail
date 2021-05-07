@@ -1,7 +1,7 @@
 <template>
   <a-layout id="components-layout-demo-side" theme="light"  style="min-height: 100vh">
     <a-layout-sider style="background-color:white" v-model="collapsed" collapsible >
-      <img style="height:64px ; width:100%" src="https://thumbs.dreamstime.com/b/d-rendering-cocktail-word-blue-neon-cocktail-title-blue-neon-142126255.jpg" alt="">
+      <img style="height:64px ; width:50%" src="https://i.pinimg.com/originals/fd/3e/53/fd3e533305c578157dbaf393b76ac1ee.jpg" alt="">
       <a-menu theme="light" :default-selected-keys="['1']" mode="inline">
         <a-menu-item key="1">
           <a-icon type="menu" />
@@ -23,11 +23,11 @@
       <img style="height:62% ; width:100%" src="https://www.gobourbon.com/wp-content/uploads/2019/03/EFCCF7C6-0A6F-4658-83B6-877007B0A1AC-751x1024.jpeg" alt="">
     </a-layout-sider>
     <a-layout>
-      <a-layout-header :style="{background: '#fff'}" >
+      <a-layout-header :style="{borderBottom:'2px'}" >
         <SearchBar/>
       </a-layout-header>
       <a-layout-content>
-        <div class="cocktail-lists" :style="{margin:'2px' , background: '#fff', minHeight: '360px' }">
+        <div class="cocktail-lists" :style="{ padding:'24px',  background: '#fff', minHeight: '360px' }">
           <router-view/>
         </div>
       </a-layout-content>

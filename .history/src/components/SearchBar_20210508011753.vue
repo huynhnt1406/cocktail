@@ -18,8 +18,7 @@ export default {
     align-items: center;
     padding-left:10px;
     padding-right: 10px;
-    border-right: none;
-    border-top:none;
+    box-shadow: 0 2px 2px rgba(0,0,0,.5);
 }
 .search-tool input{
     height: 30px;

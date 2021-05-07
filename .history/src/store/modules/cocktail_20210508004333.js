@@ -10,7 +10,7 @@ const getters = {
 }
 const actions = {
     async fetchCocktail({commit}){
-        const res = await axios.get(`https://www.thecocktaildb.com/api/json/v1/1/search.php?f=c`)
+        const res = await axios.get(`https://www.thecocktaildb.com/api/json/v1/1/search.php?f=b`)
         commit('getCocktail', res.data.drinks)
         console.log(res.data.drinks)
     },

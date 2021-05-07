@@ -96,7 +96,6 @@ export default {
 .orderButton{
     position: absolute;
     bottom: 20px;
-    left:20px;
 }
 .elements{
     padding:10px;

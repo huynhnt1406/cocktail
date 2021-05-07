@@ -18,6 +18,7 @@ export default {
     align-items: center;
     padding-left:10px;
     padding-right: 10px;
+    border-left:none;
     border-right: none;
     border-top:none;
 }

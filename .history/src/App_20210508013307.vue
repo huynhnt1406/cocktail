@@ -1,7 +1,7 @@
 <template>
   <a-layout id="components-layout-demo-side" theme="light"  style="min-height: 100vh">
     <a-layout-sider style="background-color:white" v-model="collapsed" collapsible >
-      <img style="height:64px ; width:100%" src="https://thumbs.dreamstime.com/b/d-rendering-cocktail-word-blue-neon-cocktail-title-blue-neon-142126255.jpg" alt="">
+      <img style="height:64px ; width:100%" src="https://i.pinimg.com/originals/fd/3e/53/fd3e533305c578157dbaf393b76ac1ee.jpg" alt="">
       <a-menu theme="light" :default-selected-keys="['1']" mode="inline">
         <a-menu-item key="1">
           <a-icon type="menu" />

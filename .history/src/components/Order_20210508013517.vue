@@ -74,7 +74,6 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid black;
 }
 .order-page{
   padding:5vh;

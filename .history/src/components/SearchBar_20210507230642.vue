@@ -18,8 +18,7 @@ export default {
     align-items: center;
     padding-left:10px;
     padding-right: 10px;
-    border-right: none;
-    border-top:none;
+    background-color: black;
 }
 .search-tool input{
     height: 30px;
@@ -28,13 +27,13 @@ export default {
     border-left:none;
     border-right: none;
     border-top:none;
-    border-bottom: 2px solid gray;
+    border-bottom: 2px solid black;
     margin-left: 10px;
     outline: none;
-    color:gray;
+    color:white;
 }
 ::placeholder{
-  color:gray;
+  color:white;
 }
 .search-tool input:focus{
     border-bottom: 2px solid green;

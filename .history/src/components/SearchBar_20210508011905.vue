@@ -18,8 +18,8 @@ export default {
     align-items: center;
     padding-left:10px;
     padding-right: 10px;
-    border-right: none;
-    border-top:none;
+    background-color: #f5f5f3;
+    border-bottom:2px solid rebeccapurple
 }
 .search-tool input{
     height: 30px;
